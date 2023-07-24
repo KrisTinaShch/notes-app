@@ -1,4 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau&display=swap');
+
+dl,
+ol,
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #51009d;
+}
+
+button {
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
 body {
+  font-family: 'Ysabeau', sans-serif;
   background: linear-gradient(183deg, rgba(15, 67, 180, 0.5) 0%, rgba(255, 121, 231, 0.5) 100%);
   height: 100%;
   margin: 0;
@@ -13,16 +41,46 @@ body {
 }
 
 main {
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
   display: flex;
-  
+
 }
 
-.board {
-  width: 90%;
-  height: 90%;
+.sidebar {
+  width: 20%;
+  height: 100%;
   background: rgba(255, 255, 255, 0.3);
   border: 2px solid rgba(229, 229, 229, 0.443);
-  margin: 0 auto;
+  font-weight: bold;
+}
+
+.menu-link {
+  color: #151515;
+}
+
+.notes-board {
+  padding: 20px;
+  width: 80%;
+  background: #ffffffa8;
+}
+
+.note {
+  background: #b6bfe7;
+  border-radius: 5px;
+}
+
+.input-add-note {
+  width: 90%;
+  padding: 3px;
+  margin: 0;
+  border: 2px solid #b6bfe7;
+  outline: none;
+}
+
+.add-note {
+  padding: 4px;
+  width: 9.5%;
+  background: #b6bfe7;
+  height: 40px;
 }
